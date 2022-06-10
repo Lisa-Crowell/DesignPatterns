@@ -1,0 +1,19 @@
+"""A row in a table"""
+
+from column import Column
+
+
+class Row:
+
+    def __init__(self, column_count: int) -> None:
+        self.column = []
+        for _ in range(column_count):
+            self.columns.append(Column())
+
+
+def get_data(self):
+    """Format the row before returning it to the table"""
+    ret = ""
+    for column in self.columns:
+        ret = f"{ret}{column.get_data()}|"
+    return ret
