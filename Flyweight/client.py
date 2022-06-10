@@ -1,9 +1,9 @@
 "The flyweight use case example"
 
 from table import Table
-from flyweight_factory import FlyweightFactor
+from flyweight_factory import FlyweightFactory
 
-TABLE = Table(3, 3)
+TABLE: Table = Table(3, 3)
 
 TABLE.rows[0].columns[0].data = "abra"
 TABLE.rows[0].columns[1].data = "112233"
