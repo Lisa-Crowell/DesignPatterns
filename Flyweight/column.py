@@ -16,6 +16,7 @@ class Column:
         """Get the flyweight value from the factory, and apply the extrinsic values"""
         ret = ""
         for data in self.data:
+            ret = ret + FlyweightFactory.get_flyweight(data).code
             ret = f"{ret.center(self.width)}" if self.justify == 0 else ret
             ret = f"{ret.ljust(self.width)}" if self.justify == 1 else ret
             ret = f"{ret.rjust(self.width)}" if self.justify == 2 else ret
