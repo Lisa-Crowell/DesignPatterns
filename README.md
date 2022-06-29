@@ -3,7 +3,7 @@ Design Pattern examples for Python
 Common GoF (Gang of Four) Design Patterns implemented in Python 3.9 as a learning tool
 taught by Sean Bradley
 ###
-Creational Patterns include:
+## Creational Patterns include:
 
 Factory
 
@@ -15,7 +15,7 @@ Prototype
 
 Singleton
 ###
-Structural Patterns include:
+## Structural Patterns include:
 
 Decorator
 
@@ -31,7 +31,7 @@ Flyweight
 
 Proxy
 ###
-Behavioral Patterns include:
+## Behavioral Patterns include:
 
 Command
 
@@ -40,6 +40,8 @@ Chain of Responsibility
 Observer
 
 Interpreter
+
+Iterator
 
 Mediator
 
@@ -53,4 +55,4 @@ Template Method
 
 Visitor
 ##
-Not all patterns are present, but repo will be updated often
+Not all patterns are currently present, but repo will be updated often
