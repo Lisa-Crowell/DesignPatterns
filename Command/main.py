@@ -2,12 +2,12 @@
 from abc import ABCMeta, abstractmethod
 
 
-# the command interface, that all commands will implement.
+# the Command interface, that all commands will implement.
 class ICommand(metaclass=ABCMeta):
     @staticmethod
     @abstractmethod
     def execute():
-        "the required execute method that all command objects use."
+        "the required execute method that all Command objects use."
 
 
 class Invoker:
@@ -33,11 +33,11 @@ class Receiver:
     @staticmethod
     def run_command_2():
         "A set of instructions to run"
-        print('Executing command 2')
+        print('Executing Command 2')
 
 
 class Command1(ICommand): # pylint: disable=too-few-public-methods
-    """A Command object, that implements the ICommand interface and runs the command on the designated receiver."""
+    """A Command object, that implements the ICommand interface and runs the Command on the designated receiver."""
 
     def __init__(self, receiver):
         self._receiver = receiver
@@ -47,7 +47,7 @@ class Command1(ICommand): # pylint: disable=too-few-public-methods
 
 
 class Command2(ICommand): # pylint: diable=too-few-public-methods
-    """A Command object, that implements the ICommand interface and runs the command on the designated receiver."""
+    """A Command object, that implements the ICommand interface and runs the Command on the designated receiver."""
 
     def __init__(self, receiver):
         self._receiver = receiver
